@@ -36,7 +36,7 @@ PREFIX: process.env.PREFIX || ".",
     AUTO_BIO: process.env.AUTO_BIO || "false",// Replace with your authorized numbers
     
     // Timezone for the auto-bio feature
-    TIME_ZONE: process.env.TIME_ZONE || "Asia/Kolkata",  // Change to your preferred timezone
+    TIME_ZONE: process.env.TIME_ZONE || "Afrique/centrale",  // Change to your preferred timezone
 // add your prifix for bot   
 BOT_NAME: process.env.BOT_NAME || "𝐗𝐓𝐑𝐄𝐌𝐄 𝐗𝐌𝐃",
 // add bot namw here for menu
