@@ -1,101 +1,115 @@
 {
-  "name": "Mr CHAGRIN",
-  "description": "Un compagnon discret mais efficace pour ton WhatsApp, propulsé par Mr CHAGRIN",
-  "logo": "https://cdn.pixabay.com/photo/2016/11/29/09/32/emoji-1869790_1280.png",
+  "name": "XTREME-XMD",
+  "description": "ᴊᴀᴠᴀsᴄʀɪᴘᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴘʀɪɴᴄᴇ xᴛʀᴇᴍᴇ",
+  "logo": "https://files.catbox.moe/jfbed2.jpg",
   "keywords": ["bot"],
   "success_url": "/",
-  "stack": "container",
+
+    "stack": "container",
   "env": {
     "SESSION_ID": {
       "description": "Put the session-id here.",
       "required": true,
       "value": ""
     },  
+    
     "ALIVE_IMG": {
-      "description": "Image à afficher lorsque le bot est en ligne",
+      "description": "paste your image url if you don't have you can use this public url.",
       "required": true,
-      "value": "https://cdn.pixabay.com/photo/2016/11/29/09/32/emoji-1869790_1280.png"
+      "value": "https://files.catbox.moe/jfbed2.jpg"
     }, 
+    
     "ALIVE_MSG": {
-      "description": "Message du bot lorsqu'il est en ligne",
+      "description": "paste your alive message hear.",
       "required": true,
-      "value": "Bot en ligne ✅"
+      "value": "_Hi bro am alive now🥷🏽🤝🏾._"
     },
+    
     "PREFIX": {
-      "description": "Préfixe des commandes",
+      "description": "paste your bot prefix note! Don't apply null please prefix.",
       "required": true,
       "value": "."
     },
+    
     "MODE": {
-      "description": "Public/Privé/Groupe",
+      "description": "select your bot work type public-private-inbox-group.",
       "required": true,
       "value": "public"
-    },
+    }, 
+
     "AUTO_VOICE": {
-      "description": "Activer la réponse vocale automatique",
+      "description": "Make it true if you want bot auto voice.",
       "required": true,
-      "value": "false"
+      "value": "true"
     }, 
+
     "AUTO_REPLY": {
-      "description": "Activer les réponses automatiques",
+      "description": "Make it true if you want bot auto reply.",
       "required": true,
-      "value": "false"
+      "value": "true"
     }, 
+
     "AUTO_STICKER": {
-      "description": "Activer l'auto-sticker",
+      "description": "Make it true if you want bot auto sticker.",
       "required": true,
       "value": "false"
     }, 
+
     "AUTO_READ_STATUS": {
-      "description": "Lire automatiquement les statuts après 10 secondes",
+      "description": "Make it true if you want bot auto auto_read_status.",
       "required": true,
       "value": "true"
     }, 
+
     "ANTI_LINK": {
-      "description": "Supprimer automatiquement les liens dans les groupes où tu es admin",
+      "description": "Make it true if you want bot auto remove group link.",
       "required": true,
       "value": "true"
     },
+
     "ANTI_BAD": {
-      "description": "Supprimer les mots interdits dans les groupes où tu es admin",
+      "description": "Make it true if you want bot auto delete bad words from group example xxx porn etc.",
       "required": true,
-      "value": "true"
+      "value": "false"
     }, 
+
     "FAKE_RECORDING": {
-      "description": "Activer l'effet de faux enregistrement",
+      "description": "Make it true if you want bot fake record.",
       "required": true,
-      "value": "false"
-    },
-    "AUTO_REACT": {
-      "description": "Réaction automatique aux messages",
-      "required": false,
-      "value": "false"
-    },
-    "OWNER_REACT": {
-      "description": "Activer les réactions réservées au propriétaire",
-      "required": false,
       "value": "true"
-    }, 
-    "BOT_NAME": {
-      "description": "Nom du bot",
-      "required": true,
-      "value": "Mr CHAGRIN"
-    }, 
-    "HEART_REACT": {
-      "description": "Réaction uniquement avec ♥️",
-      "required": true,
+    },
+
+    "AUTO_REACT": {
+      "description": "Make it true if you want bot AutoReact.",
+      "required": false,
       "value": "false"
     },
-    "OWNER_NUMBER": {
-      "description": "Nom du propriétaire",
+
+    "OWNER_REACT": {
+      "description": "Make it true if you want bot OwnerReact.",
+      "required": false,
+      "value": "false"
+    
+    }, 
+
+    "BOT_NAME": {
+      "description": "write hear your name.",
       "required": true,
-      "value": "Mr CHAGRIN"
+      "value": "✦ 𝗫𝗧𝗥𝗘𝗠𝗘 𝗫𝗠𝗗 ✦"
+    }, 
+
+    "HEART_REACT": {
+      "description": "Make it true if you want bot only heart ♥️ emjois reaction .",
+      "required": true,
+      "value": "false"
     }
-  },
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-    }
-  ],
+
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
   "stack": "heroku-24"
-}
+  }
