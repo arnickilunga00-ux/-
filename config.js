@@ -11,7 +11,7 @@ module.exports = {
     AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "false",
     AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
     AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
-    ANTI_CALL: process.env.ANTI_CALL || "true",
+    ANTI_CALL: process.env.ANTI_CALL || "false",
     AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS BY MR CHAGRIN 🤍*",
     
     ANTI_DELETE: process.env.ANTI_DELETE || "true",
