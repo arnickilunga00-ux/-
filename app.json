@@ -1,115 +1,119 @@
 {
-  "name": "XTREME-XMD",
-  "description": "ᴊᴀᴠᴀsᴄʀɪᴘᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴘʀɪɴᴄᴇ xᴛʀᴇᴍᴇ",
-  "logo": "https://files.catbox.moe/jfbed2.jpg",
-  "keywords": ["bot"],
+  "name": "Solitaire Bot",
+  "description": "A simple and neutral WhatsApp bot, personalized by Solitaire",
+  "logo": "https://files.catbox.moe/1zzt3a.jpg",
+  "keywords": ["bot", "whatsapp", "solitaire"],
   "success_url": "/",
 
-    "stack": "container",
+  "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "Put the session-id here.",
+      "description": "Put your session ID here.",
       "required": true,
       "value": ""
     },  
     
     "ALIVE_IMG": {
-      "description": "paste your image url if you don't have you can use this public url.",
+      "description": "Image shown when the bot is alive.",
       "required": true,
-      "value": "https://files.catbox.moe/jfbed2.jpg"
+      "value": "https://files.catbox.moe/1zzt3a.jpg"
     }, 
     
     "ALIVE_MSG": {
-      "description": "paste your alive message hear.",
+      "description": "Message shown when the bot is online.",
       "required": true,
-      "value": "_Hi bro am alive now🥷🏽🤝🏾._"
+      "value": "I'm now connected to you ⚡"
     },
     
     "PREFIX": {
-      "description": "paste your bot prefix note! Don't apply null please prefix.",
+      "description": "Prefix for bot commands.",
       "required": true,
-      "value": "."
+      "value": "'"
     },
     
     "MODE": {
-      "description": "select your bot work type public-private-inbox-group.",
+      "description": "Choose bot mode: public, private, inbox, group.",
       "required": true,
       "value": "public"
     }, 
 
     "AUTO_VOICE": {
-      "description": "Make it true if you want bot auto voice.",
+      "description": "Set true if you want auto voice replies.",
       "required": true,
-      "value": "true"
+      "value": "false"
     }, 
 
     "AUTO_REPLY": {
-      "description": "Make it true if you want bot auto reply.",
+      "description": "Set true if you want auto replies.",
       "required": true,
       "value": "true"
     }, 
 
     "AUTO_STICKER": {
-      "description": "Make it true if you want bot auto sticker.",
+      "description": "Set true if you want images automatically converted to stickers.",
       "required": true,
       "value": "false"
     }, 
 
     "AUTO_READ_STATUS": {
-      "description": "Make it true if you want bot auto auto_read_status.",
+      "description": "Set true if you want the bot to auto-read WhatsApp statuses.",
       "required": true,
       "value": "true"
     }, 
 
     "ANTI_LINK": {
-      "description": "Make it true if you want bot auto remove group link.",
+      "description": "Set true if you want the bot to remove group links automatically.",
       "required": true,
-      "value": "true"
+      "value": "false"
     },
 
     "ANTI_BAD": {
-      "description": "Make it true if you want bot auto delete bad words from group example xxx porn etc.",
+      "description": "Set true if you want the bot to auto-delete bad words.",
       "required": true,
       "value": "false"
     }, 
 
     "FAKE_RECORDING": {
-      "description": "Make it true if you want bot fake record.",
+      "description": "Set true if you want the bot to fake recording status.",
       "required": true,
-      "value": "true"
+      "value": "false"
     },
 
     "AUTO_REACT": {
-      "description": "Make it true if you want bot AutoReact.",
+      "description": "Set true if you want auto emoji reactions.",
       "required": false,
       "value": "false"
     },
 
     "OWNER_REACT": {
-      "description": "Make it true if you want bot OwnerReact.",
+      "description": "Set true if you want bot to react only to the owner.",
       "required": false,
       "value": "false"
-    
     }, 
 
     "BOT_NAME": {
-      "description": "write hear your name.",
+      "description": "Displayed bot name.",
       "required": true,
-      "value": "✦ 𝗫𝗧𝗥𝗘𝗠𝗘 𝗫𝗠𝗗 ✦"
+      "value": "Solitaire"
     }, 
 
     "HEART_REACT": {
-      "description": "Make it true if you want bot only heart ♥️ emjois reaction .",
+      "description": "Set true if you want only heart emoji reactions.",
       "required": true,
       "value": "false"
+    },
+
+    "SIGNATURE": {
+      "description": "Signature added to every bot message.",
+      "required": false,
+      "value": "By Solitaire"
     }
+  },
 
-},
-
-     "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
   "stack": "heroku-24"
-  }
+    }
