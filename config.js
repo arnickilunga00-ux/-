@@ -6,11 +6,11 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || "XTREME~XMD~mk5SyDJI#Swz0hTbRVT1_w1eazTzf0UDJ8iom1GIBXo7c--kE_xI",
+    SESSION_ID: process.env.SESSION_ID || "XTREME~XMD~vgIU2bCY#RgVzIp2O-QexNMs1hWlFAC-P7DFzS3OHFskEcxp1cxs",
     
     AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "false",
     AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
-    AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
+    AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "false",
     ANTI_CALL: process.env.ANTI_CALL || "false",
     AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS BY MR CHAGRIN 🤍*",
     
